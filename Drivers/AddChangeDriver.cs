@@ -40,10 +40,7 @@ namespace Drivers
                 drivers.Surname = surnameTextBox.Text;
                 drivers.Name = nameTextBox.Text;
                 drivers.Middlename = middleNameTextBox.Text;
-                //drivers.Password = passwordMTb.Text;
-                //drivers.Address = addressregCmb.Text;
                 drivers.Address= addressTextBox.Text;
-                //drivers.AddressLife = addresslifeCmb.Text;
                 drivers.AddressLife = addressLifeTextBox.Text;
                 drivers.Company = companyTextBox.Text;
                 drivers.Jobname = jobnameTextBox.Text;
@@ -75,11 +72,8 @@ namespace Drivers
                 drivers.Id = Convert.ToInt32(iDTextBox.Text);
                 drivers.Surname = surnameTextBox.Text;
                 drivers.Name = nameTextBox.Text;
-                drivers.Middlename = middleNameTextBox.Text;
-                //drivers.Password = passwordMTb.Text;
-                //drivers.AddressCity = addressregCmb.Text;
-                drivers.Address = addressTextBox.Text;
-                //drivers.AddressCityLife = addresslifeCmb.Text;
+                drivers.Middlename = middleNameTextBox.Text;               
+                drivers.Address = addressTextBox.Text;               
                 drivers.AddressLife = addressLifeTextBox.Text;
                 drivers.Company = companyTextBox.Text;
                 drivers.Jobname = jobnameTextBox.Text;
@@ -134,11 +128,8 @@ namespace Drivers
                 FillComboBox();
                 surnameTextBox.Text = drivers.Surname;
                 nameTextBox.Text = drivers.Name;
-                middleNameTextBox.Text = drivers.Middlename;
-                //passwordMTb.Text = drivers.Password;
-                //addressregCmb.Text = drivers.AddressCity;
+                middleNameTextBox.Text = drivers.Middlename;           
                 addressTextBox.Text = drivers.Address;
-                //addresslifeCmb.Text = drivers.AddressCityLife;
                 addressLifeTextBox.Text = drivers.AddressLife;
                 companyTextBox.Text = drivers.Company;
                 jobnameTextBox.Text = drivers.Jobname;
