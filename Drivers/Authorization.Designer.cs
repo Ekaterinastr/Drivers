@@ -101,6 +101,7 @@
             this.Controls.Add(this.loginLb);
             this.Name = "Authorization";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Authorization_Load);
             this.Controls.SetChildIndex(this.nameLb, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.loginLb, 0);

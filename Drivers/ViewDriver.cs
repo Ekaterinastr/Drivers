@@ -70,5 +70,12 @@ namespace Drivers
             }
             driversBindingSource.DataSource = db.drivers.ToList();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            License pmf = new License();
+            pmf.Show();
+            Hide();
+        }
     }
 }
