@@ -41,6 +41,8 @@
             System.Windows.Forms.Label phoneLabel;
             System.Windows.Forms.Label photoLabel;
             System.Windows.Forms.Label surnameLabel;
+            System.Windows.Forms.Label postcodeLabel;
+            System.Windows.Forms.Label passportLabel;
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.addressLifeTextBox = new System.Windows.Forms.TextBox();
@@ -60,6 +62,8 @@
             this.exitBtn = new System.Windows.Forms.Button();
             this.attachBtn = new System.Windows.Forms.Button();
             this.namePhotoTb = new System.Windows.Forms.TextBox();
+            this.postcodeTextBox = new System.Windows.Forms.TextBox();
+            this.passportTextBox = new System.Windows.Forms.TextBox();
             addressLabel = new System.Windows.Forms.Label();
             addressLifeLabel = new System.Windows.Forms.Label();
             companyLabel = new System.Windows.Forms.Label();
@@ -72,6 +76,8 @@
             phoneLabel = new System.Windows.Forms.Label();
             photoLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
+            postcodeLabel = new System.Windows.Forms.Label();
+            passportLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoPic)).BeginInit();
@@ -92,7 +98,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(47, 280);
+            addressLabel.Location = new System.Drawing.Point(47, 306);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new System.Drawing.Size(84, 18);
             addressLabel.TabIndex = 3;
@@ -200,7 +206,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(213, 277);
+            this.addressTextBox.Location = new System.Drawing.Point(213, 300);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(388, 24);
             this.addressTextBox.TabIndex = 4;
@@ -347,11 +353,50 @@
             this.namePhotoTb.Size = new System.Drawing.Size(145, 24);
             this.namePhotoTb.TabIndex = 42;
             // 
+            // postcodeLabel
+            // 
+            postcodeLabel.AutoSize = true;
+            postcodeLabel.Location = new System.Drawing.Point(45, 265);
+            postcodeLabel.Name = "postcodeLabel";
+            postcodeLabel.Size = new System.Drawing.Size(136, 18);
+            postcodeLabel.TabIndex = 42;
+            postcodeLabel.Text = "Почтовый индекс:";
+            postcodeLabel.Click += new System.EventHandler(this.postcodeLabel_Click);
+            // 
+            // postcodeTextBox
+            // 
+            this.postcodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "postcode", true));
+            this.postcodeTextBox.Location = new System.Drawing.Point(213, 265);
+            this.postcodeTextBox.Name = "postcodeTextBox";
+            this.postcodeTextBox.Size = new System.Drawing.Size(315, 24);
+            this.postcodeTextBox.TabIndex = 43;
+            // 
+            // passportLabel
+            // 
+            passportLabel.AutoSize = true;
+            passportLabel.Location = new System.Drawing.Point(42, 232);
+            passportLabel.Name = "passportLabel";
+            passportLabel.Size = new System.Drawing.Size(135, 18);
+            passportLabel.TabIndex = 43;
+            passportLabel.Text = "Данные паспорта:";
+            // 
+            // passportTextBox
+            // 
+            this.passportTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "passport", true));
+            this.passportTextBox.Location = new System.Drawing.Point(213, 226);
+            this.passportTextBox.Name = "passportTextBox";
+            this.passportTextBox.Size = new System.Drawing.Size(334, 24);
+            this.passportTextBox.TabIndex = 44;
+            // 
             // AddChangeDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 733);
+            this.ClientSize = new System.Drawing.Size(646, 741);
+            this.Controls.Add(passportLabel);
+            this.Controls.Add(this.passportTextBox);
+            this.Controls.Add(postcodeLabel);
+            this.Controls.Add(this.postcodeTextBox);
             this.Controls.Add(this.namePhotoTb);
             this.Controls.Add(this.attachBtn);
             this.Controls.Add(this.exitBtn);
@@ -413,6 +458,10 @@
             this.Controls.SetChildIndex(this.exitBtn, 0);
             this.Controls.SetChildIndex(this.attachBtn, 0);
             this.Controls.SetChildIndex(this.namePhotoTb, 0);
+            this.Controls.SetChildIndex(this.postcodeTextBox, 0);
+            this.Controls.SetChildIndex(postcodeLabel, 0);
+            this.Controls.SetChildIndex(this.passportTextBox, 0);
+            this.Controls.SetChildIndex(passportLabel, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoPic)).EndInit();
@@ -444,5 +493,7 @@
         private System.Windows.Forms.BindingSource driversBindingSource1;
         private System.Windows.Forms.BindingSource driversBindingSource2;
         private System.Windows.Forms.TextBox namePhotoTb;
+        private System.Windows.Forms.TextBox postcodeTextBox;
+        private System.Windows.Forms.TextBox passportTextBox;
     }
 }

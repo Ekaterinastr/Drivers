@@ -35,11 +35,11 @@ namespace Drivers
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if(ViewDriver.add == true)
-            {
+            {                
                 drivers drivers = new drivers();
                 drivers.Surname = surnameTextBox.Text;
                 drivers.Name = nameTextBox.Text;
-                drivers.Middlename = middleNameTextBox.Text;
+                drivers.Middlename = middleNameTextBox.Text;                
                 drivers.Address= addressTextBox.Text;
                 drivers.AddressLife = addressLifeTextBox.Text;
                 drivers.Company = companyTextBox.Text;
@@ -160,6 +160,11 @@ namespace Drivers
             //                  select p.AddressCityLife)
             //      .Distinct();
             //addresslifeCmb.DataSource = addressLife.ToList();
+        }
+
+        private void postcodeLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
