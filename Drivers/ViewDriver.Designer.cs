@@ -48,14 +48,15 @@
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.licencesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.driversBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.driversBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.driversBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.driversBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.driversBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource2)).BeginInit();
             this.SuspendLayout();
@@ -219,13 +220,13 @@
             this.licencesDataGridViewTextBoxColumn.HeaderText = "Licences";
             this.licencesDataGridViewTextBoxColumn.Name = "licencesDataGridViewTextBoxColumn";
             // 
-            // driversBindingSource3
-            // 
-            this.driversBindingSource3.DataSource = typeof(Drivers.drivers);
-            // 
             // driversBindingSource
             // 
             this.driversBindingSource.DataSource = typeof(Drivers.drivers);
+            // 
+            // driversBindingSource3
+            // 
+            this.driversBindingSource3.DataSource = typeof(Drivers.drivers);
             // 
             // driversBindingSource1
             // 
@@ -235,11 +236,21 @@
             // 
             this.driversBindingSource2.DataSource = typeof(Drivers.drivers);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(650, 458);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 34);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Лицензия";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ViewDriver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 518);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.createBtn);
             this.Controls.Add(this.changeBtn);
@@ -253,10 +264,11 @@
             this.Controls.SetChildIndex(this.changeBtn, 0);
             this.Controls.SetChildIndex(this.createBtn, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource2)).EndInit();
             this.ResumeLayout(false);
@@ -290,5 +302,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn licencesDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource driversBindingSource2;
         private System.Windows.Forms.BindingSource driversBindingSource3;
+        private System.Windows.Forms.Button button1;
     }
 }
