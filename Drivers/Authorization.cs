@@ -21,7 +21,8 @@ namespace Drivers
 
         private void sighInButton_Click(object sender, EventArgs e)
         {
-            if(loginTb.Text == "" || passwordTb.Text == "")
+            
+            if (loginTb.Text == "" || passwordTb.Text == "")
             {
                 MessageBox.Show("Внимание! Вы заполнили не все поля!", "Ошибка авторизации: незаполненные поля",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -37,15 +38,15 @@ namespace Drivers
                 }
                 else
                 {
+                    
                     MessageBox.Show($"Сотрудник с таким логином - {loginTb.Text} не существует!",
                         "Ошибка авторизации: логин не существует", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
+        }       
         private void Authorization_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
