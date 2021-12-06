@@ -22,5 +22,12 @@ namespace Drivers
         {
             licencesBindingSource.DataSource = db.Licences.ToList();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            ViewDriver pmf = new ViewDriver();
+            pmf.Show();
+            Hide();
+        }
     }
 }

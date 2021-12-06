@@ -85,7 +85,7 @@
             // changeBtn
             // 
             this.changeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
-            this.changeBtn.Location = new System.Drawing.Point(425, 470);
+            this.changeBtn.Location = new System.Drawing.Point(267, 470);
             this.changeBtn.Name = "changeBtn";
             this.changeBtn.Size = new System.Drawing.Size(94, 33);
             this.changeBtn.TabIndex = 4;
@@ -96,7 +96,7 @@
             // createBtn
             // 
             this.createBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
-            this.createBtn.Location = new System.Drawing.Point(849, 470);
+            this.createBtn.Location = new System.Drawing.Point(498, 473);
             this.createBtn.Name = "createBtn";
             this.createBtn.Size = new System.Drawing.Size(94, 33);
             this.createBtn.TabIndex = 5;
@@ -238,12 +238,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(650, 458);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
+            this.button1.Location = new System.Drawing.Point(718, 469);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 34);
             this.button1.TabIndex = 7;
             this.button1.Text = "Лицензия";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ViewDriver

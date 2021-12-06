@@ -31,7 +31,6 @@ namespace Drivers
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.licencesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.idlicenseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iddriverDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.expiredateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,8 @@ namespace Drivers
             this.engineTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeofdriveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.driversDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.licencesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.exitBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.licencesBindingSource)).BeginInit();
@@ -79,10 +80,6 @@ namespace Drivers
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(878, 326);
             this.dataGridView1.TabIndex = 7;
-            // 
-            // licencesBindingSource
-            // 
-            this.licencesBindingSource.DataSource = typeof(Drivers.Licences);
             // 
             // idlicenseDataGridViewTextBoxColumn
             // 
@@ -180,16 +177,33 @@ namespace Drivers
             this.driversDataGridViewTextBoxColumn.HeaderText = "drivers";
             this.driversDataGridViewTextBoxColumn.Name = "driversDataGridViewTextBoxColumn";
             // 
+            // licencesBindingSource
+            // 
+            this.licencesBindingSource.DataSource = typeof(Drivers.Licences);
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(213)))), ((int)(((byte)(202)))));
+            this.exitBtn.Location = new System.Drawing.Point(34, 527);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(91, 30);
+            this.exitBtn.TabIndex = 40;
+            this.exitBtn.Text = "Назад";
+            this.exitBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            // 
             // License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.ClientSize = new System.Drawing.Size(946, 600);
+            this.Controls.Add(this.exitBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "License";
             this.Load += new System.EventHandler(this.License_Load);
             this.Controls.SetChildIndex(this.nameLb, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.exitBtn, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.licencesBindingSource)).EndInit();
@@ -218,5 +232,6 @@ namespace Drivers
         private System.Windows.Forms.DataGridViewTextBoxColumn typeofdriveDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn driversDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource licencesBindingSource;
+        private System.Windows.Forms.Button exitBtn;
     }
 }
