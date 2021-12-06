@@ -92,7 +92,7 @@
             // addressLabel
             // 
             addressLabel.AutoSize = true;
-            addressLabel.Location = new System.Drawing.Point(46, 289);
+            addressLabel.Location = new System.Drawing.Point(47, 280);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new System.Drawing.Size(84, 18);
             addressLabel.TabIndex = 3;
@@ -101,7 +101,7 @@
             // addressLifeLabel
             // 
             addressLifeLabel.AutoSize = true;
-            addressLifeLabel.Location = new System.Drawing.Point(46, 336);
+            addressLifeLabel.Location = new System.Drawing.Point(47, 340);
             addressLifeLabel.Name = "addressLifeLabel";
             addressLifeLabel.Size = new System.Drawing.Size(98, 18);
             addressLifeLabel.TabIndex = 9;
@@ -110,7 +110,7 @@
             // companyLabel
             // 
             companyLabel.AutoSize = true;
-            companyLabel.Location = new System.Drawing.Point(42, 365);
+            companyLabel.Location = new System.Drawing.Point(47, 370);
             companyLabel.Name = "companyLabel";
             companyLabel.Size = new System.Drawing.Size(113, 18);
             companyLabel.TabIndex = 11;
@@ -146,7 +146,7 @@
             // jobnameLabel
             // 
             jobnameLabel.AutoSize = true;
-            jobnameLabel.Location = new System.Drawing.Point(46, 401);
+            jobnameLabel.Location = new System.Drawing.Point(47, 400);
             jobnameLabel.Name = "jobnameLabel";
             jobnameLabel.Size = new System.Drawing.Size(93, 18);
             jobnameLabel.TabIndex = 19;
@@ -200,7 +200,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(213, 283);
+            this.addressTextBox.Location = new System.Drawing.Point(213, 277);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(388, 24);
             this.addressTextBox.TabIndex = 4;
@@ -212,7 +212,7 @@
             // addressLifeTextBox
             // 
             this.addressLifeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "AddressLife", true));
-            this.addressLifeTextBox.Location = new System.Drawing.Point(213, 330);
+            this.addressLifeTextBox.Location = new System.Drawing.Point(213, 337);
             this.addressLifeTextBox.Name = "addressLifeTextBox";
             this.addressLifeTextBox.Size = new System.Drawing.Size(388, 24);
             this.addressLifeTextBox.TabIndex = 10;
@@ -220,7 +220,7 @@
             // companyTextBox
             // 
             this.companyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "Company", true));
-            this.companyTextBox.Location = new System.Drawing.Point(213, 365);
+            this.companyTextBox.Location = new System.Drawing.Point(213, 367);
             this.companyTextBox.Name = "companyTextBox";
             this.companyTextBox.Size = new System.Drawing.Size(388, 24);
             this.companyTextBox.TabIndex = 12;
@@ -245,7 +245,7 @@
             // jobnameTextBox
             // 
             this.jobnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.driversBindingSource, "Jobname", true));
-            this.jobnameTextBox.Location = new System.Drawing.Point(213, 395);
+            this.jobnameTextBox.Location = new System.Drawing.Point(213, 397);
             this.jobnameTextBox.Name = "jobnameTextBox";
             this.jobnameTextBox.Size = new System.Drawing.Size(388, 24);
             this.jobnameTextBox.TabIndex = 20;
@@ -383,6 +383,8 @@
             this.Name = "AddChangeDriver";
             this.Text = "AddChangeDriver";
             this.Load += new System.EventHandler(this.AddChangeDriver_Load);
+            this.Controls.SetChildIndex(this.nameLb, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.surnameTextBox, 0);
             this.Controls.SetChildIndex(surnameLabel, 0);
             this.Controls.SetChildIndex(photoLabel, 0);
@@ -411,8 +413,6 @@
             this.Controls.SetChildIndex(this.exitBtn, 0);
             this.Controls.SetChildIndex(this.attachBtn, 0);
             this.Controls.SetChildIndex(this.namePhotoTb, 0);
-            this.Controls.SetChildIndex(this.nameLb, 0);
-            this.Controls.SetChildIndex(this.pictureBox1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.driversBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.photoPic)).EndInit();

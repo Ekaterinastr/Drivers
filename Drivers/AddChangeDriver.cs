@@ -27,7 +27,8 @@ namespace Drivers
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            if(surnameTextBox.Text == "" || nameTextBox.Text == "" || middleNameTextBox.Text==""|| addressTextBox.Text ==""||addressLifeTextBox.Text==""
+            if(surnameTextBox.Text == "" || nameTextBox.Text == "" || middleNameTextBox.Text==""
+                ||  addressTextBox.Text ==""||addressLifeTextBox.Text==""
                 || companyTextBox.Text=="" || jobnameTextBox.Text == "" || phoneMtb.Text == "")
             {
                 MessageBox.Show("Внимание! Заполните все поля!", "Ошибка добавления: незаполненные поля",
@@ -40,6 +41,8 @@ namespace Drivers
                 drivers.Name = nameTextBox.Text;
                 drivers.Middlename = middleNameTextBox.Text;
                 //drivers.Password = passwordMTb.Text;
+                //drivers.Address = addressregCmb.Text;
+                drivers.Address= addressTextBox.Text;
                 //drivers.AddressLife = addresslifeCmb.Text;
                 drivers.AddressLife = addressLifeTextBox.Text;
                 drivers.Company = companyTextBox.Text;

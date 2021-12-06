@@ -265,12 +265,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridViewTextBoxColumn passportDataGridViewTextBoxColumn;
+        
         private System.Windows.Forms.BindingSource driversBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn middleNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressCityDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressCityLifeDataGridViewTextBoxColumn;
+        
         private System.Windows.Forms.Button deleteBtn;
         private System.Windows.Forms.Button changeBtn;
         private System.Windows.Forms.Button createBtn;
